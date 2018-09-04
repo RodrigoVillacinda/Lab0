@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.rodrigo.lab0.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="43dp"
+        android:onClick="BuscarLista"
+        />
+
+    <EditText
+        android:id="@+id/txtBuscae"
+        android:layout_width="176dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="43dp"
+        />
+
+    <TableRow
+        android:layout_width="308dp"
+        android:layout_height="360dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+</android.support.constraint.ConstraintLayout>
