@@ -8,8 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
+    private ListView Lista;
+    private Adapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,17 +47,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public class canciones {
-        String nombre;
-        String duracion;
-    }
-
     public void AgregarLista(View Vista){
 
 
     }
 
-    public void BuscarLista(View Vista){
+    public void BuscaLista(View Vista){
+
+    }
+
+    public void MostrarCanciones(){
+
+        TextView TextoResultado = (TextView)findViewById(R.id.btnBuscar);
+
 
     }
 

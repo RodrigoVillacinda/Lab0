@@ -11,28 +11,28 @@
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="123dp"
-        android:layout_height="46dp"
+        android:layout_height="48dp"
         android:text="Buscar"
-        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="43dp"
         android:onClick="BuscarLista"
         />
 
     <EditText
         android:id="@+id/txtBuscae"
-        android:layout_width="176dp"
-        android:layout_height="46dp"
+        android:layout_width="122dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="43dp"
         />
 
-    <TableRow
-        android:layout_width="308dp"
-        android:layout_height="360dp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="115dp" />
+    <ListView
+        android:layout_width="87dp"
+        android:layout_height="383dp"
+        tools:layout_editor_absoluteY="112dp"
+        tools:layout_editor_absoluteX="16dp" />
 
 </android.support.constraint.ConstraintLayout>
