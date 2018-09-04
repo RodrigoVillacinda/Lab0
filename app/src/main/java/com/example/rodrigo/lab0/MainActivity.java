@@ -8,14 +8,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
 
     private ListView Lista;
-    private Adapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
     public void AgregarLista(View Vista){
 
 
+        ArrayAdapter adapter = new ArrayAdapter(getApplicationContext(), android.R.layout.simple_expandable_list_item_1);
+
     }
 
     public void BuscaLista(View Vista){
@@ -62,5 +68,46 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void ListaCanciones(){
+
+        List<Canciones> lista = new ArrayList<>();
+
+        Canciones cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+
+        cancion = new Canciones();
+        cancion.setNombre("One");
+        cancion.setDuracion("3:14");
+        lista.add(cancion);
+    }
+
 
 }
