@@ -69,6 +69,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void OrdenarLista(List<Canciones> cancionesplay,int sele){
+        if (sele == 0)
+        {
+            //cancionesplay.sort(n);
+        }
+        else
+        {
+
+        }
+    }
+
     public void ListaCanciones(){
 
         List<Canciones> lista = new ArrayList<>();
