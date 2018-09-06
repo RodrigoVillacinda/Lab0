@@ -40,7 +40,7 @@ public class Canciones implements Comparable<Canciones> {
 
     public void setDuracion(String duracion) {
         this.duracion = duracion;
-        String[] partes = duracion.split(";");
+        String[] partes = duracion.split(":");
         this.segundos = (Integer.parseInt(partes[0]))*60+(Integer.parseInt(partes[1]));
     }
 

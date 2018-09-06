@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.Collections;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void ListaCanciones(){
+    public List<Canciones> ListaCanciones(){
 
         List<Canciones> lista = new ArrayList<>();
 
@@ -119,6 +120,17 @@ public class MainActivity extends AppCompatActivity {
         cancion.setNombre("One");
         cancion.setDuracion("3:14");
         lista.add(cancion);
+
+        //Así es como se mete para que se ordene la lista
+        //Collections.sort(lista);
+
+        //Creo que así sería para el orden descendente, pero solo luego de que ya esté ordenada
+        //Collections.reverse(lista);
+
+        //Hay que ver si este funciona tambien, porque como le hice override a esa onda
+        //Collections.sort(lista,Collections.<Canciones>reverseOrder());
+
+        return lista;
     }
 
 
