@@ -81,27 +81,15 @@ public class MainActivity extends AppCompatActivity {
                 //lista.add(new Canciones(1, dato, "22"));
                 listaN.add(resultado);
 
-
                 Adapter miAdaptador = new Adapter(getApplicationContext(), listaN);
 
                 ListaCan.setAdapter(miAdaptador);
             }
         } );
 
-       // Collections.sort(listaN, (o1, o2) -> o1.getDuracion().compareTo(o2.getDuracion()));
-
-        //Collections.sort(listaN, new Comparator<Canciones>() {
-          //  @Override
-            //public int compare(Canciones o1, Canciones o2) {
-          //      return 0;
-            //}
-        //});
-
-
     }
 
 
-    ///lista de canciones disponibles
 
 
 

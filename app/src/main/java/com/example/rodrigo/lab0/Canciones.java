@@ -7,6 +7,7 @@ import java.util.List;
  * Created by Rodrigo on 3/09/2018.
  */
 
+
 public class Canciones {
     private int Id;
     public String nombre;
@@ -34,6 +35,7 @@ public class Canciones {
         this.duracion = duracion;
     }
 
+
     public int getId(){
         return Id;
     }
@@ -60,5 +62,6 @@ public class Canciones {
         return ListaCanciones;
 
     }
+
 
 }
